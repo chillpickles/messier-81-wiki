@@ -1,0 +1,56 @@
+site_name: Messier-81
+nav:
+  - Home: index.md
+  - Cosmology:
+    - Origins: cosmology/origin.md
+  - Astrogation:
+    - Star Systems: astrogation/star_systems.md
+    - Stars:
+      - Acubens: 
+        - Acubens System: astrogation/star_systems/acubens/acubens_system.md
+        - GY533: astrogation/star_systems/acubens/planets/GY533.md
+        - GY1980: astrogation/star_systems/acubens/planets/GY1989.md
+  - About: about.md
+theme: 
+  name: terminal
+  palette: gruvbox_dark
+  color_mode: auto
+  user_color_mode_toggle: true
+  features:
+    - navigation.footer
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes: 
+        - custom-skip-class-name
+      auto_themed: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+  - mkdocs-audiotag:
+      loop: false
+      controls: false
+  - mkdocs-wavesurfer:
+      height: 96
+      wave_color: #cc905c
+      progress_color: #e0b692
+      cursor_color: #e3b432
+      cursor_width: 2
+      bar_width: 4
+      bar_gap: 2
+      normalize: true
+      auto_scroll: true
+  # - mkdocs-audio
